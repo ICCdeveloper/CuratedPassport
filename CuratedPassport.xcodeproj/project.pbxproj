@@ -15,7 +15,6 @@
 		5CA727871E73C7590072D6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA727851E73C7590072D6CC /* LaunchScreen.storyboard */; };
 		5CA727931E73C8020072D6CC /* CPHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA727921E73C8020072D6CC /* CPHomeViewController.swift */; };
 		5CA727951E73C81E0072D6CC /* CPDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA727941E73C81E0072D6CC /* CPDataModel.swift */; };
-		5CA727971E73C82F0072D6CC /* CPSdweb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA727961E73C82F0072D6CC /* CPSdweb.swift */; };
 		5CA727991E73C84A0072D6CC /* CPHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA727981E73C84A0072D6CC /* CPHomeView.swift */; };
 		5CA7279C1E73D6E60072D6CC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7279A1E73D6E60072D6CC /* SwiftyJSON.swift */; };
 		5CA727A01E73D7CC0072D6CC /* CPHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7279F1E73D7CC0072D6CC /* CPHttpRequest.swift */; };
@@ -31,7 +30,6 @@
 		5CA727881E73C7590072D6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CA727921E73C8020072D6CC /* CPHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPHomeViewController.swift; sourceTree = "<group>"; };
 		5CA727941E73C81E0072D6CC /* CPDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDataModel.swift; sourceTree = "<group>"; };
-		5CA727961E73C82F0072D6CC /* CPSdweb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSdweb.swift; sourceTree = "<group>"; };
 		5CA727981E73C84A0072D6CC /* CPHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPHomeView.swift; sourceTree = "<group>"; };
 		5CA7279A1E73D6E60072D6CC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		5CA7279E1E73D7040072D6CC /* CPHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPHeader.h; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			children = (
 				5CA7279A1E73D6E60072D6CC /* SwiftyJSON.swift */,
 				5CA7279F1E73D7CC0072D6CC /* CPHttpRequest.swift */,
-				5CA727961E73C82F0072D6CC /* CPSdweb.swift */,
 				5CA7279E1E73D7040072D6CC /* CPHeader.h */,
 			);
 			path = CPThird;
@@ -267,7 +264,6 @@
 				5CA727931E73C8020072D6CC /* CPHomeViewController.swift in Sources */,
 				5CA727A01E73D7CC0072D6CC /* CPHttpRequest.swift in Sources */,
 				5CA727991E73C84A0072D6CC /* CPHomeView.swift in Sources */,
-				5CA727971E73C82F0072D6CC /* CPSdweb.swift in Sources */,
 				5CA727951E73C81E0072D6CC /* CPDataModel.swift in Sources */,
 				5CA7279C1E73D6E60072D6CC /* SwiftyJSON.swift in Sources */,
 				5CA7277D1E73C7580072D6CC /* AppDelegate.swift in Sources */,
