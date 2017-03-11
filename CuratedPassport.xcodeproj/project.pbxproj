@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445BEDA3BD3AB5727595468E /* libPods-CuratedPassport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4094175122A9A6F0BF46B0A /* libPods-CuratedPassport.a */; };
 		5CA7277D1E73C7580072D6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7277C1E73C7580072D6CC /* AppDelegate.swift */; };
 		5CA7277F1E73C7580072D6CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7277E1E73C7580072D6CC /* ViewController.swift */; };
 		5CA727821E73C7590072D6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA727801E73C7590072D6CC /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 		5CA727951E73C81E0072D6CC /* CPDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA727941E73C81E0072D6CC /* CPDataModel.swift */; };
 		5CA727971E73C82F0072D6CC /* CPSdweb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA727961E73C82F0072D6CC /* CPSdweb.swift */; };
 		5CA727991E73C84A0072D6CC /* CPHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA727981E73C84A0072D6CC /* CPHomeView.swift */; };
+		5CA7279C1E73D6E60072D6CC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7279A1E73D6E60072D6CC /* SwiftyJSON.swift */; };
+		5CA727A01E73D7CC0072D6CC /* CPHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7279F1E73D7CC0072D6CC /* CPHttpRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,12 @@
 		5CA727941E73C81E0072D6CC /* CPDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDataModel.swift; sourceTree = "<group>"; };
 		5CA727961E73C82F0072D6CC /* CPSdweb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSdweb.swift; sourceTree = "<group>"; };
 		5CA727981E73C84A0072D6CC /* CPHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPHomeView.swift; sourceTree = "<group>"; };
+		5CA7279A1E73D6E60072D6CC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		5CA7279E1E73D7040072D6CC /* CPHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPHeader.h; sourceTree = "<group>"; };
+		5CA7279F1E73D7CC0072D6CC /* CPHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPHttpRequest.swift; sourceTree = "<group>"; };
+		7155A26D009DBE4690C86F5E /* Pods-CuratedPassport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuratedPassport.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuratedPassport/Pods-CuratedPassport.release.xcconfig"; sourceTree = "<group>"; };
+		97C9B833F7809A471963D866 /* Pods-CuratedPassport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuratedPassport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuratedPassport/Pods-CuratedPassport.debug.xcconfig"; sourceTree = "<group>"; };
+		F4094175122A9A6F0BF46B0A /* libPods-CuratedPassport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuratedPassport.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,12 +46,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445BEDA3BD3AB5727595468E /* libPods-CuratedPassport.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2329074E1C9F26F9B44F7093 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4094175122A9A6F0BF46B0A /* libPods-CuratedPassport.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5CA727701E73C7580072D6CC = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +70,8 @@
 				5CA727911E73C7DE0072D6CC /* CPViews */,
 				5CA7277B1E73C7580072D6CC /* CuratedPassport */,
 				5CA7277A1E73C7580072D6CC /* Products */,
+				CF0707AEC1124C3E4BF6A0FB /* Pods */,
+				2329074E1C9F26F9B44F7093 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +115,10 @@
 		5CA727901E73C7DE0072D6CC /* CPThird */ = {
 			isa = PBXGroup;
 			children = (
+				5CA7279A1E73D6E60072D6CC /* SwiftyJSON.swift */,
+				5CA7279F1E73D7CC0072D6CC /* CPHttpRequest.swift */,
 				5CA727961E73C82F0072D6CC /* CPSdweb.swift */,
+				5CA7279E1E73D7040072D6CC /* CPHeader.h */,
 			);
 			path = CPThird;
 			sourceTree = "<group>";
@@ -108,6 +131,15 @@
 			path = CPViews;
 			sourceTree = "<group>";
 		};
+		CF0707AEC1124C3E4BF6A0FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97C9B833F7809A471963D866 /* Pods-CuratedPassport.debug.xcconfig */,
+				7155A26D009DBE4690C86F5E /* Pods-CuratedPassport.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CA7278B1E73C7590072D6CC /* Build configuration list for PBXNativeTarget "CuratedPassport" */;
 			buildPhases = (
+				9FFAC37CECF6EE97C9850D2A /* [CP] Check Pods Manifest.lock */,
 				5CA727751E73C7580072D6CC /* Sources */,
 				5CA727761E73C7580072D6CC /* Frameworks */,
 				5CA727771E73C7580072D6CC /* Resources */,
+				2FA0985E39D288F2B546CCD0 /* [CP] Embed Pods Frameworks */,
+				8DF426DDD9D193A11F5DF5F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,6 +210,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FA0985E39D288F2B546CCD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CuratedPassport/Pods-CuratedPassport-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DF426DDD9D193A11F5DF5F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CuratedPassport/Pods-CuratedPassport-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FFAC37CECF6EE97C9850D2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5CA727751E73C7580072D6CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -182,9 +265,11 @@
 			files = (
 				5CA7277F1E73C7580072D6CC /* ViewController.swift in Sources */,
 				5CA727931E73C8020072D6CC /* CPHomeViewController.swift in Sources */,
+				5CA727A01E73D7CC0072D6CC /* CPHttpRequest.swift in Sources */,
 				5CA727991E73C84A0072D6CC /* CPHomeView.swift in Sources */,
 				5CA727971E73C82F0072D6CC /* CPSdweb.swift in Sources */,
 				5CA727951E73C81E0072D6CC /* CPDataModel.swift in Sources */,
+				5CA7279C1E73D6E60072D6CC /* SwiftyJSON.swift in Sources */,
 				5CA7277D1E73C7580072D6CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,24 +391,28 @@
 		};
 		5CA7278C1E73C7590072D6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97C9B833F7809A471963D866 /* Pods-CuratedPassport.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CuratedPassport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iccorg.CuratedPassport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CPThird/CPHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		5CA7278D1E73C7590072D6CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7155A26D009DBE4690C86F5E /* Pods-CuratedPassport.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CuratedPassport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iccorg.CuratedPassport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CPThird/CPHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -347,6 +436,7 @@
 				5CA7278D1E73C7590072D6CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
