@@ -10,4 +10,6 @@
 #define CPHeader_h
 
 #import "AFNetworking.h"
+#import "CycleScrollView.h"
+#import "NSTimer+Addition.h"
 #endif /* CPHeader_h */
