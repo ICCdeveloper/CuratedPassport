@@ -21,14 +21,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pku-Ii-OxU">
-                                <rect key="frame" x="0.0" y="28" width="375" height="204"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pku-Ii-OxU">
+                                <rect key="frame" x="0.0" y="20" width="414" height="200"/>
                                 <color key="backgroundColor" red="0.3803921569" green="0.73725490199999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="bz1-KC-KhS"/>
+                                </constraints>
                             </scrollView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fIm-VK-bnZ">
-                                <rect key="frame" x="0.0" y="262" width="375" height="196"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIm-VK-bnZ">
+                                <rect key="frame" x="0.0" y="250" width="414" height="200"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WechatIMG16.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="AKR-FK-jqM">
                                         <rect key="frame" x="14" y="14" width="70" height="70"/>
@@ -123,14 +124,38 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="z4d-ul-acG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14G-8J-f7g">
+                                <rect key="frame" x="0.0" y="450" width="414" height="60"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="giu-Wj-ESk"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fIm-VK-bnZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="61a-pI-yof"/>
+                            <constraint firstItem="Pku-Ii-OxU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7ZY-mW-pDT"/>
+                            <constraint firstAttribute="trailing" secondItem="fIm-VK-bnZ" secondAttribute="trailing" id="NwB-tm-4hp"/>
+                            <constraint firstAttribute="trailing" secondItem="14G-8J-f7g" secondAttribute="trailing" id="azl-p9-gos"/>
+                            <constraint firstItem="Pku-Ii-OxU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="d7I-ep-5fp"/>
+                            <constraint firstItem="14G-8J-f7g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="q1S-hQ-ji4"/>
+                            <constraint firstItem="fIm-VK-bnZ" firstAttribute="top" secondItem="Pku-Ii-OxU" secondAttribute="bottom" constant="30" id="v66-mZ-JMp"/>
+                            <constraint firstItem="14G-8J-f7g" firstAttribute="top" secondItem="fIm-VK-bnZ" secondAttribute="bottom" id="vuZ-6V-u8O"/>
+                            <constraint firstAttribute="trailing" secondItem="Pku-Ii-OxU" secondAttribute="trailing" id="zJF-3b-sfs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="notifyView" destination="14G-8J-f7g" id="PXg-7h-PyA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="-89.505247376311857"/>
+            <point key="canvasLocation" x="27.536231884057973" y="-89.673913043478265"/>
         </scene>
     </scenes>
     <resources>
