@@ -8,45 +8,66 @@
 
 import UIKit
 
-class CPHomeViewController: UIViewController {
+class CPHomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
-    @IBOutlet weak var notifyView: UIView!
-    var notiFrView : CycleScrollView!
+    
+    var bgView : UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-        notiFrView = CycleScrollView.init(frame: CGRect.init(x: 0, y: 0, width: self.notifyView.frame.width, height: self.notifyView.frame.height), animationDuration: 1.0)
-        let viewsArr = NSMutableArray.init()
-        let arr = ["Si","Li","Con","Zou"]
-        for _ in 0...arr.count {
-            for si in arr {
-                let label = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: notifyView.frame.width, height: notifyView.frame.height))
-                label.text = NSString.init(format: "%@", si) as String
-                label.textAlignment = .center
-                label.textColor = UIColor.darkText
-                label.font = UIFont.systemFont(ofSize: 20)
-                viewsArr.add(label)
-            }
-        }
-        self.notiFrView.backgroundColor = UIColor.blue
-        self.notiFrView.fetchContentViewAtIndex = { (pageIndex) in
-
-            return viewsArr[pageIndex] as? UIView
-        }
+        bgView = UITableView.init(frame: CGRect.init(x: 0, y: 64, width: self.view.frame.width, height: self.view.frame.height))
+        self.view.addSubview(bgView)
+        bgView.delegate = self
+        bgView.dataSource = self
+        bgView.tableFooterView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 0, height: 0))
+        bgView.separatorStyle = UITableViewCellSeparatorStyle.none
+        bgView.register(UINib.init(nibName: "CPMagazineViewCell", bundle: nil), forCellReuseIdentifier: "CPMagazineViewCell")
+        bgView.register(UINib.init(nibName: "CPInfoViewCell", bundle: nil), forCellReuseIdentifier: "CPInfoViewCell")
+        bgView.register(UINib.init(nibName: "CPNotifyViewCell", bundle: nil), forCellReuseIdentifier: "CPNotifyViewCell")
+        bgView.register(UINib.init(nibName: "CPLocaViewCell", bundle: nil), forCellReuseIdentifier: "CPLocaViewCell")
         
-        self.notiFrView.totalPagesCount = {
-        
-            return viewsArr.count
-        }
-        
-        self.notifyView.addSubview(notiFrView)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CPMagazineViewCell", for: indexPath) as! CPMagazineViewCell
+            return cell
+        } else if indexPath.section == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CPInfoViewCell", for: indexPath) as! CPInfoViewCell
+            return cell
+        } else if indexPath.section == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CPNotifyViewCell", for: indexPath) as! CPNotifyViewCell
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CPLocaViewCell", for: indexPath) as! CPLocaViewCell
+            return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return 150
+        } else if indexPath.section == 1 {
+            return 200
+        } else if indexPath.section == 2 {
+            return 60
+        } else {
+            return 100
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if section == 3 {
+            return 0
+        }
+        return 10
+    }
 
 }
