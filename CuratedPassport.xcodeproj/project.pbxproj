@@ -143,10 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				5CC21F031E7E656300DD4AA6 /* ZWADScrollview */,
-				5CA727A71E7533350072D6CC /* CycleScrollView.h */,
-				5CA727A81E7533350072D6CC /* CycleScrollView.m */,
-				5CA727A91E7533350072D6CC /* NSTimer+Addition.h */,
-				5CA727AA1E7533350072D6CC /* NSTimer+Addition.m */,
+				5CC21F091E7E8F2800DD4AA6 /* CycleScrollView */,
 				5CA7279A1E73D6E60072D6CC /* SwiftyJSON.swift */,
 				5CA7279F1E73D7CC0072D6CC /* CPHttpRequest.swift */,
 				5CA7279E1E73D7040072D6CC /* CPHeader.h */,
@@ -176,6 +173,17 @@
 				5CC21F051E7E656300DD4AA6 /* ZWAdView.m */,
 			);
 			path = ZWADScrollview;
+			sourceTree = "<group>";
+		};
+		5CC21F091E7E8F2800DD4AA6 /* CycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				5CA727A71E7533350072D6CC /* CycleScrollView.h */,
+				5CA727A81E7533350072D6CC /* CycleScrollView.m */,
+				5CA727A91E7533350072D6CC /* NSTimer+Addition.h */,
+				5CA727AA1E7533350072D6CC /* NSTimer+Addition.m */,
+			);
+			name = CycleScrollView;
 			sourceTree = "<group>";
 		};
 		CF0707AEC1124C3E4BF6A0FB /* Pods */ = {
