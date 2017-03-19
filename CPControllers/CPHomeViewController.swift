@@ -14,6 +14,8 @@ class CPHomeViewController: UIViewController,UITableViewDelegate,UITableViewData
     var bgView : UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "CP"
+        self.automaticallyAdjustsScrollViewInsets = false
         bgView = UITableView.init(frame: CGRect.init(x: 0, y: 64, width: self.view.frame.width, height: self.view.frame.height))
         self.view.addSubview(bgView)
         bgView.delegate = self
@@ -68,6 +70,15 @@ class CPHomeViewController: UIViewController,UITableViewDelegate,UITableViewData
             return 0
         }
         return 10
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        let offsetY = scrollView.contentOffset.y
+        let valueNum = bgView.contentSize.height - UIScreen.main.bounds.height
+        if offsetY - valueNum > 30 {
+            
+            self.navigationController?.pushViewController(CPTestViewController(), animated: true)
+        }
     }
 
 }

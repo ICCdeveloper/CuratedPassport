@@ -12,4 +12,5 @@
 #import "AFNetworking.h"
 #import "CycleScrollView.h"
 #import "NSTimer+Addition.h"
+#import "ZWAdView.h"
 #endif /* CPHeader_h */

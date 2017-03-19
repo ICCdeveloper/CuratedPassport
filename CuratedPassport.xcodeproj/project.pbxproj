@@ -28,6 +28,8 @@
 		5CA862191E7CC9FE00BD0113 /* CPLocaViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA862171E7CC9FE00BD0113 /* CPLocaViewCell.xib */; };
 		5CA8621C1E7CD3FD00BD0113 /* CPInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8621A1E7CD3FD00BD0113 /* CPInfoViewCell.swift */; };
 		5CA8621D1E7CD3FD00BD0113 /* CPInfoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA8621B1E7CD3FD00BD0113 /* CPInfoViewCell.xib */; };
+		5CC21F061E7E656300DD4AA6 /* ZWAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC21F051E7E656300DD4AA6 /* ZWAdView.m */; };
+		5CC21F081E7E88CE00DD4AA6 /* CPTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC21F071E7E88CE00DD4AA6 /* CPTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,9 @@
 		5CA862171E7CC9FE00BD0113 /* CPLocaViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPLocaViewCell.xib; sourceTree = "<group>"; };
 		5CA8621A1E7CD3FD00BD0113 /* CPInfoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPInfoViewCell.swift; sourceTree = "<group>"; };
 		5CA8621B1E7CD3FD00BD0113 /* CPInfoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPInfoViewCell.xib; sourceTree = "<group>"; };
+		5CC21F041E7E656300DD4AA6 /* ZWAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWAdView.h; sourceTree = "<group>"; };
+		5CC21F051E7E656300DD4AA6 /* ZWAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWAdView.m; sourceTree = "<group>"; };
+		5CC21F071E7E88CE00DD4AA6 /* CPTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTestViewController.swift; sourceTree = "<group>"; };
 		7155A26D009DBE4690C86F5E /* Pods-CuratedPassport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuratedPassport.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuratedPassport/Pods-CuratedPassport.release.xcconfig"; sourceTree = "<group>"; };
 		97C9B833F7809A471963D866 /* Pods-CuratedPassport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuratedPassport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuratedPassport/Pods-CuratedPassport.debug.xcconfig"; sourceTree = "<group>"; };
 		F4094175122A9A6F0BF46B0A /* libPods-CuratedPassport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuratedPassport.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				5CA727921E73C8020072D6CC /* CPHomeViewController.swift */,
+				5CC21F071E7E88CE00DD4AA6 /* CPTestViewController.swift */,
 			);
 			path = CPControllers;
 			sourceTree = "<group>";
@@ -136,6 +142,7 @@
 		5CA727901E73C7DE0072D6CC /* CPThird */ = {
 			isa = PBXGroup;
 			children = (
+				5CC21F031E7E656300DD4AA6 /* ZWADScrollview */,
 				5CA727A71E7533350072D6CC /* CycleScrollView.h */,
 				5CA727A81E7533350072D6CC /* CycleScrollView.m */,
 				5CA727A91E7533350072D6CC /* NSTimer+Addition.h */,
@@ -160,6 +167,15 @@
 				5CA8621B1E7CD3FD00BD0113 /* CPInfoViewCell.xib */,
 			);
 			path = CPViews;
+			sourceTree = "<group>";
+		};
+		5CC21F031E7E656300DD4AA6 /* ZWADScrollview */ = {
+			isa = PBXGroup;
+			children = (
+				5CC21F041E7E656300DD4AA6 /* ZWAdView.h */,
+				5CC21F051E7E656300DD4AA6 /* ZWAdView.m */,
+			);
+			path = ZWADScrollview;
 			sourceTree = "<group>";
 		};
 		CF0707AEC1124C3E4BF6A0FB /* Pods */ = {
@@ -307,7 +323,9 @@
 				5CA727951E73C81E0072D6CC /* CPDataModel.swift in Sources */,
 				5CA7279C1E73D6E60072D6CC /* SwiftyJSON.swift in Sources */,
 				5CA8621C1E7CD3FD00BD0113 /* CPInfoViewCell.swift in Sources */,
+				5CC21F061E7E656300DD4AA6 /* ZWAdView.m in Sources */,
 				5CA862181E7CC9FE00BD0113 /* CPLocaViewCell.swift in Sources */,
+				5CC21F081E7E88CE00DD4AA6 /* CPTestViewController.swift in Sources */,
 				5CA862141E7CC99E00BD0113 /* CPNotifyViewCell.swift in Sources */,
 				5CA8620C1E7CC96800BD0113 /* CPMagazineViewCell.swift in Sources */,
 				5CA727AC1E7533350072D6CC /* NSTimer+Addition.m in Sources */,

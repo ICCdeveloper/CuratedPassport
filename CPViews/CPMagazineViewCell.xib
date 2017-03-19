@@ -12,25 +12,28 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CPMagazineViewCell" rowHeight="145" id="KGk-i7-Jjw" customClass="CPMagazineViewCell" customModule="CuratedPassport" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="411" height="145"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="411" height="144"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="149"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVQ-r6-odz">
-                        <rect key="frame" x="0.0" y="0.0" width="411" height="144"/>
-                        <color key="backgroundColor" red="0.48045790199999999" green="0.70007139439999999" blue="0.180292815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </scrollView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0NO-Mu-OIy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="149.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="uVQ-r6-odz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9SK-eK-jdg"/>
-                    <constraint firstItem="uVQ-r6-odz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="G6V-3J-3Vh"/>
-                    <constraint firstAttribute="bottom" secondItem="uVQ-r6-odz" secondAttribute="bottom" id="PeF-JR-gKj"/>
-                    <constraint firstAttribute="trailing" secondItem="uVQ-r6-odz" secondAttribute="trailing" id="gD2-tO-2Dl"/>
+                    <constraint firstItem="0NO-Mu-OIy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WR7-Lm-H7T"/>
+                    <constraint firstAttribute="trailing" secondItem="0NO-Mu-OIy" secondAttribute="trailing" id="ZFC-gQ-4rN"/>
+                    <constraint firstItem="0NO-Mu-OIy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="l7a-cX-xEE"/>
+                    <constraint firstAttribute="bottom" secondItem="0NO-Mu-OIy" secondAttribute="bottom" id="w7P-sV-5uG"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="79.5" y="104.5"/>
+            <connections>
+                <outlet property="magaBgView" destination="0NO-Mu-OIy" id="1JZ-vD-mM9"/>
+            </connections>
+            <point key="canvasLocation" x="65" y="99"/>
         </tableViewCell>
     </objects>
 </document>
