@@ -28,6 +28,7 @@
 		5CA862191E7CC9FE00BD0113 /* CPLocaViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA862171E7CC9FE00BD0113 /* CPLocaViewCell.xib */; };
 		5CA8621C1E7CD3FD00BD0113 /* CPInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8621A1E7CD3FD00BD0113 /* CPInfoViewCell.swift */; };
 		5CA8621D1E7CD3FD00BD0113 /* CPInfoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA8621B1E7CD3FD00BD0113 /* CPInfoViewCell.xib */; };
+		5CB04D021E851869003E8D04 /* CPInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D011E851869003E8D04 /* CPInfoViewController.swift */; };
 		5CC21F061E7E656300DD4AA6 /* ZWAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC21F051E7E656300DD4AA6 /* ZWAdView.m */; };
 		5CC21F081E7E88CE00DD4AA6 /* CPTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC21F071E7E88CE00DD4AA6 /* CPTestViewController.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +37,7 @@
 		5CA727791E73C7580072D6CC /* CuratedPassport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuratedPassport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA7277C1E73C7580072D6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CA727811E73C7590072D6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5CA727831E73C7590072D6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CA727831E73C7590072D6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../CuratedPassport/Assets.xcassets; sourceTree = "<group>"; };
 		5CA727861E73C7590072D6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CA727881E73C7590072D6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CA727921E73C8020072D6CC /* CPHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPHomeViewController.swift; sourceTree = "<group>"; };
@@ -44,8 +45,8 @@
 		5CA7279A1E73D6E60072D6CC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		5CA7279E1E73D7040072D6CC /* CPHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPHeader.h; sourceTree = "<group>"; };
 		5CA7279F1E73D7CC0072D6CC /* CPHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPHttpRequest.swift; sourceTree = "<group>"; };
-		5CA727A31E7526620072D6CC /* qian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qian.png; sourceTree = "<group>"; };
-		5CA727A41E7526620072D6CC /* WechatIMG16.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG16.jpeg; sourceTree = "<group>"; };
+		5CA727A31E7526620072D6CC /* qian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = qian.png; path = ../CuratedPassport/qian.png; sourceTree = "<group>"; };
+		5CA727A41E7526620072D6CC /* WechatIMG16.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = WechatIMG16.jpeg; path = ../CuratedPassport/WechatIMG16.jpeg; sourceTree = "<group>"; };
 		5CA727A71E7533350072D6CC /* CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollView.h; sourceTree = "<group>"; };
 		5CA727A81E7533350072D6CC /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollView.m; sourceTree = "<group>"; };
 		5CA727A91E7533350072D6CC /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		5CA862171E7CC9FE00BD0113 /* CPLocaViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPLocaViewCell.xib; sourceTree = "<group>"; };
 		5CA8621A1E7CD3FD00BD0113 /* CPInfoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPInfoViewCell.swift; sourceTree = "<group>"; };
 		5CA8621B1E7CD3FD00BD0113 /* CPInfoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPInfoViewCell.xib; sourceTree = "<group>"; };
+		5CB04D011E851869003E8D04 /* CPInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPInfoViewController.swift; sourceTree = "<group>"; };
 		5CC21F041E7E656300DD4AA6 /* ZWAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWAdView.h; sourceTree = "<group>"; };
 		5CC21F051E7E656300DD4AA6 /* ZWAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWAdView.m; sourceTree = "<group>"; };
 		5CC21F071E7E88CE00DD4AA6 /* CPTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTestViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		5CA727701E73C7580072D6CC = {
 			isa = PBXGroup;
 			children = (
+				5CB04D001E850A23003E8D04 /* CPResource */,
 				5CA7278E1E73C7DE0072D6CC /* CPControllers */,
 				5CA7278F1E73C7DE0072D6CC /* CPModel */,
 				5CA727901E73C7DE0072D6CC /* CPThird */,
@@ -111,11 +114,8 @@
 		5CA7277B1E73C7580072D6CC /* CuratedPassport */ = {
 			isa = PBXGroup;
 			children = (
-				5CA727A31E7526620072D6CC /* qian.png */,
-				5CA727A41E7526620072D6CC /* WechatIMG16.jpeg */,
 				5CA7277C1E73C7580072D6CC /* AppDelegate.swift */,
 				5CA727801E73C7590072D6CC /* Main.storyboard */,
-				5CA727831E73C7590072D6CC /* Assets.xcassets */,
 				5CA727851E73C7590072D6CC /* LaunchScreen.storyboard */,
 				5CA727881E73C7590072D6CC /* Info.plist */,
 			);
@@ -127,6 +127,7 @@
 			children = (
 				5CA727921E73C8020072D6CC /* CPHomeViewController.swift */,
 				5CC21F071E7E88CE00DD4AA6 /* CPTestViewController.swift */,
+				5CB04D011E851869003E8D04 /* CPInfoViewController.swift */,
 			);
 			path = CPControllers;
 			sourceTree = "<group>";
@@ -164,6 +165,16 @@
 				5CA8621B1E7CD3FD00BD0113 /* CPInfoViewCell.xib */,
 			);
 			path = CPViews;
+			sourceTree = "<group>";
+		};
+		5CB04D001E850A23003E8D04 /* CPResource */ = {
+			isa = PBXGroup;
+			children = (
+				5CA727A31E7526620072D6CC /* qian.png */,
+				5CA727A41E7526620072D6CC /* WechatIMG16.jpeg */,
+				5CA727831E73C7590072D6CC /* Assets.xcassets */,
+			);
+			path = CPResource;
 			sourceTree = "<group>";
 		};
 		5CC21F031E7E656300DD4AA6 /* ZWADScrollview */ = {
@@ -334,6 +345,7 @@
 				5CC21F061E7E656300DD4AA6 /* ZWAdView.m in Sources */,
 				5CA862181E7CC9FE00BD0113 /* CPLocaViewCell.swift in Sources */,
 				5CC21F081E7E88CE00DD4AA6 /* CPTestViewController.swift in Sources */,
+				5CB04D021E851869003E8D04 /* CPInfoViewController.swift in Sources */,
 				5CA862141E7CC99E00BD0113 /* CPNotifyViewCell.swift in Sources */,
 				5CA8620C1E7CC96800BD0113 /* CPMagazineViewCell.swift in Sources */,
 				5CA727AC1E7533350072D6CC /* NSTimer+Addition.m in Sources */,

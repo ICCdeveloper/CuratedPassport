@@ -12,19 +12,22 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CPInfoViewCell" id="KGk-i7-Jjw" customClass="CPInfoViewCell" customModule="CuratedPassport" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="199"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Lm-c0-dxv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="199"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WechatIMG16.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="jPI-PF-rKF">
-                                <rect key="frame" x="14" y="14" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG16.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="jPI-PF-rKF">
+                                <rect key="frame" x="8" y="14" width="70" height="70"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Hpf-6V-htY"/>
+                                    <constraint firstAttribute="height" constant="70" id="gS9-Uv-Ywv"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="35"/>
@@ -32,9 +35,8 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUG-3m-BRH">
-                                <rect key="frame" x="109" y="14" width="106" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUG-3m-BRH">
+                                <rect key="frame" x="103" y="10" width="101" height="28"/>
                                 <attributedString key="attributedText">
                                     <fragment content="SiliconZou">
                                         <attributes>
@@ -44,9 +46,8 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7h-ru-yNg">
-                                <rect key="frame" x="252" y="14" width="106" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7h-ru-yNg">
+                                <rect key="frame" x="298" y="10" width="101" height="26"/>
                                 <attributedString key="attributedText">
                                     <fragment content="经验值：150">
                                         <attributes>
@@ -57,9 +58,8 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-o5-6wb">
-                                <rect key="frame" x="109" y="43" width="77" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-o5-6wb">
+                                <rect key="frame" x="103" y="40" width="68" height="24"/>
                                 <attributedString key="attributedText">
                                     <fragment content="社区会员">
                                         <attributes>
@@ -70,22 +70,8 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdq-Ds-HBO">
-                                <rect key="frame" x="209" y="43" width="77" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="余365天">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="PingFangSC-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CD4-je-TkT">
-                                <rect key="frame" x="109" y="72" width="202" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CD4-je-TkT">
+                                <rect key="frame" x="103" y="66" width="187" height="24"/>
                                 <attributedString key="attributedText">
                                     <fragment content="用户行业/职业信息/标签">
                                         <attributes>
@@ -96,24 +82,20 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qian.png" translatesAutoresizingMaskIntoConstraints="NO" id="FvA-oP-0m2">
-                                <rect key="frame" x="14" y="115" width="177" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z56-ay-zJn">
-                                <rect key="frame" x="228" y="136" width="106" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="SiliconZou">
-                                        <attributes>
-                                            <font key="NSFont" size="20" name="PingFangSC-Semibold"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CD4-je-TkT" firstAttribute="leading" secondItem="jPI-PF-rKF" secondAttribute="trailing" constant="25" id="8k4-lO-BZx"/>
+                            <constraint firstItem="jPI-PF-rKF" firstAttribute="top" secondItem="3Lm-c0-dxv" secondAttribute="top" constant="14" id="AHp-bb-ynV"/>
+                            <constraint firstItem="cUG-3m-BRH" firstAttribute="top" secondItem="3Lm-c0-dxv" secondAttribute="top" constant="10" id="AzJ-h6-HjG"/>
+                            <constraint firstItem="z7h-ru-yNg" firstAttribute="top" secondItem="3Lm-c0-dxv" secondAttribute="top" constant="10" id="LRt-NQ-DbC"/>
+                            <constraint firstAttribute="trailing" secondItem="z7h-ru-yNg" secondAttribute="trailing" constant="15" id="M7v-mZ-tGE"/>
+                            <constraint firstItem="cUG-3m-BRH" firstAttribute="leading" secondItem="jPI-PF-rKF" secondAttribute="trailing" constant="25" id="QIx-dp-4fe"/>
+                            <constraint firstItem="jPI-PF-rKF" firstAttribute="leading" secondItem="3Lm-c0-dxv" secondAttribute="leading" constant="8" id="VQ7-Wa-iDW"/>
+                            <constraint firstItem="F9O-o5-6wb" firstAttribute="top" secondItem="cUG-3m-BRH" secondAttribute="bottom" constant="2" id="cuh-pr-4pT"/>
+                            <constraint firstItem="CD4-je-TkT" firstAttribute="top" secondItem="F9O-o5-6wb" secondAttribute="bottom" constant="2" id="uDr-o5-grt"/>
+                            <constraint firstItem="F9O-o5-6wb" firstAttribute="leading" secondItem="jPI-PF-rKF" secondAttribute="trailing" constant="25" id="ulw-fb-Xi6"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
@@ -127,6 +109,5 @@
     </objects>
     <resources>
         <image name="WechatIMG16.jpeg" width="500" height="500"/>
-        <image name="qian.png" width="3530" height="2308"/>
     </resources>
 </document>

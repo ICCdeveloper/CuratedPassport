@@ -18,28 +18,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qian.png" translatesAutoresizingMaskIntoConstraints="NO" id="XmO-KU-OpN">
-                        <rect key="frame" x="13" y="8" width="126" height="82"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qian.png" translatesAutoresizingMaskIntoConstraints="NO" id="XmO-KU-OpN">
+                        <rect key="frame" x="8" y="8" width="126" height="82"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="126" id="U5E-0F-dw8"/>
+                            <constraint firstAttribute="height" constant="82" id="r9I-Z5-vN9"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXp-WV-sdv">
-                        <rect key="frame" x="157" y="24" width="159" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXp-WV-sdv">
+                        <rect key="frame" x="149" y="15" width="140" height="28"/>
                         <attributedString key="attributedText">
                             <fragment content="离你最近的聚点">
-                                <attributes>
-                                    <font key="NSFont" size="22" name="PingFangSC-Semibold"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRP-I4-gyQ">
-                        <rect key="frame" x="348" y="24" width="53" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <attributedString key="attributedText">
-                            <fragment content="18km">
                                 <attributes>
                                     <font key="NSFont" size="20" name="PingFangSC-Semibold"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -48,35 +37,69 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="可申请的签证" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIn-cH-Icm">
-                        <rect key="frame" x="160" y="62" width="76" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRP-I4-gyQ">
+                        <rect key="frame" x="354.5" y="17" width="44.5" height="25.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="18km">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="PingFangSC-Semibold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可申请的签证" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIn-cH-Icm">
+                        <rect key="frame" x="149" y="58" width="61.5" height="25"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="MTo-Bf-iav"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                         <size key="shadowOffset" width="0.0" height="0.0"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="可申请的签证" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilI-Ke-jqc">
-                        <rect key="frame" x="241" y="62" width="76" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可申请的签证" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilI-Ke-jqc">
+                        <rect key="frame" x="214.5" y="58" width="61.5" height="25"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="NLr-2m-evI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                         <size key="shadowOffset" width="0.0" height="0.0"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="可申请的签证" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qii-0q-MgE">
-                        <rect key="frame" x="323" y="62" width="76" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可申请的签证" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qii-0q-MgE">
+                        <rect key="frame" x="280" y="58.5" width="61.5" height="25"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="zyW-Ti-4ZU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                         <size key="shadowOffset" width="0.0" height="0.0"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="ilI-Ke-jqc" firstAttribute="leading" secondItem="fIn-cH-Icm" secondAttribute="trailing" constant="4" id="2Fs-Ze-LR7"/>
+                    <constraint firstItem="XmO-KU-OpN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="34N-E3-Vkw"/>
+                    <constraint firstAttribute="trailing" secondItem="cRP-I4-gyQ" secondAttribute="trailing" constant="15" id="CaL-PB-t0h"/>
+                    <constraint firstItem="ilI-Ke-jqc" firstAttribute="width" secondItem="fIn-cH-Icm" secondAttribute="width" id="TNq-ov-zDw"/>
+                    <constraint firstItem="Qii-0q-MgE" firstAttribute="top" secondItem="cRP-I4-gyQ" secondAttribute="bottom" constant="16" id="TiX-Da-OlS"/>
+                    <constraint firstItem="XmO-KU-OpN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="TvG-zb-YyG"/>
+                    <constraint firstItem="eXp-WV-sdv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Ums-hN-tAH"/>
+                    <constraint firstItem="ilI-Ke-jqc" firstAttribute="top" secondItem="eXp-WV-sdv" secondAttribute="bottom" constant="15" id="Yoh-xN-1Ps"/>
+                    <constraint firstItem="cRP-I4-gyQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="a60-wt-auY"/>
+                    <constraint firstItem="Qii-0q-MgE" firstAttribute="width" secondItem="fIn-cH-Icm" secondAttribute="width" id="aXR-IC-g8E"/>
+                    <constraint firstItem="Qii-0q-MgE" firstAttribute="leading" secondItem="ilI-Ke-jqc" secondAttribute="trailing" constant="4" id="dOH-Ke-mEB"/>
+                    <constraint firstItem="fIn-cH-Icm" firstAttribute="leading" secondItem="XmO-KU-OpN" secondAttribute="trailing" constant="15" id="grs-uK-JzS"/>
+                    <constraint firstItem="eXp-WV-sdv" firstAttribute="leading" secondItem="XmO-KU-OpN" secondAttribute="trailing" constant="15" id="u5Y-kf-QxX"/>
+                    <constraint firstItem="fIn-cH-Icm" firstAttribute="top" secondItem="eXp-WV-sdv" secondAttribute="bottom" constant="15" id="zAv-EJ-NNS"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="visaLabel1" destination="fIn-cH-Icm" id="CKU-Ov-zO8"/>
