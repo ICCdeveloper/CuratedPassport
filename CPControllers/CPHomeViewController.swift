@@ -74,10 +74,11 @@ class CPHomeViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let offsetY = scrollView.contentOffset.y
-        let valueNum = bgView.contentSize.height - UIScreen.main.bounds.height
-        if offsetY - valueNum > 30 {
-            
-            self.navigationController?.pushViewController(CPTestViewController(), animated: true)
+        let valueNum = bgView.contentSize.height - UIScreen.main.bounds.size.height
+        if scrollView.isKind(of: UITableView.classForCoder()) {
+            if offsetY - valueNum > 30 {
+                self.navigationController?.pushViewController(CPTestViewController(), animated: true)
+            }
         }
     }
 
