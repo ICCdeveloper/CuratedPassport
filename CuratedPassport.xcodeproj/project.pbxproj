@@ -29,6 +29,21 @@
 		5CA8621C1E7CD3FD00BD0113 /* CPInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8621A1E7CD3FD00BD0113 /* CPInfoViewCell.swift */; };
 		5CA8621D1E7CD3FD00BD0113 /* CPInfoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA8621B1E7CD3FD00BD0113 /* CPInfoViewCell.xib */; };
 		5CB04D021E851869003E8D04 /* CPInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D011E851869003E8D04 /* CPInfoViewController.swift */; };
+		5CB04D051E86194E003E8D04 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D041E86194E003E8D04 /* UIView+Extension.m */; };
+		5CB04D081E861B8F003E8D04 /* CPConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D071E861B8F003E8D04 /* CPConfig.swift */; };
+		5CB04D0A1E86205A003E8D04 /* CPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D091E86205A003E8D04 /* CPBaseViewController.swift */; };
+		5CB04D0E1E864EEA003E8D04 /* CPDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D0C1E864EEA003E8D04 /* CPDetailViewCell.swift */; };
+		5CB04D0F1E864EEA003E8D04 /* CPDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB04D0D1E864EEA003E8D04 /* CPDetailViewCell.xib */; };
+		5CB04D121E8657E2003E8D04 /* CPVisaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D101E8657E2003E8D04 /* CPVisaViewCell.swift */; };
+		5CB04D131E8657E2003E8D04 /* CPVisaViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB04D111E8657E2003E8D04 /* CPVisaViewCell.xib */; };
+		5CB04D1F1E866C5D003E8D04 /* CPMyCourseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D1D1E866C5D003E8D04 /* CPMyCourseViewCell.swift */; };
+		5CB04D201E866C5D003E8D04 /* CPMyCourseViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB04D1E1E866C5D003E8D04 /* CPMyCourseViewCell.xib */; };
+		5CB04D231E866D66003E8D04 /* CPMyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D211E866D66003E8D04 /* CPMyViewCell.swift */; };
+		5CB04D241E866D66003E8D04 /* CPMyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB04D221E866D66003E8D04 /* CPMyViewCell.xib */; };
+		5CB04D271E8672C7003E8D04 /* CPMyInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D251E8672C7003E8D04 /* CPMyInfoViewCell.swift */; };
+		5CB04D281E8672C7003E8D04 /* CPMyInfoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB04D261E8672C7003E8D04 /* CPMyInfoViewCell.xib */; };
+		5CB04D2B1E867351003E8D04 /* CPMyVisaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D291E867351003E8D04 /* CPMyVisaViewCell.swift */; };
+		5CB04D2C1E867351003E8D04 /* CPMyVisaViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB04D2A1E867351003E8D04 /* CPMyVisaViewCell.xib */; };
 		5CC21F061E7E656300DD4AA6 /* ZWAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC21F051E7E656300DD4AA6 /* ZWAdView.m */; };
 		5CC21F081E7E88CE00DD4AA6 /* CPTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC21F071E7E88CE00DD4AA6 /* CPTestViewController.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +75,22 @@
 		5CA8621A1E7CD3FD00BD0113 /* CPInfoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPInfoViewCell.swift; sourceTree = "<group>"; };
 		5CA8621B1E7CD3FD00BD0113 /* CPInfoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPInfoViewCell.xib; sourceTree = "<group>"; };
 		5CB04D011E851869003E8D04 /* CPInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPInfoViewController.swift; sourceTree = "<group>"; };
+		5CB04D031E86194E003E8D04 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		5CB04D041E86194E003E8D04 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		5CB04D071E861B8F003E8D04 /* CPConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPConfig.swift; sourceTree = "<group>"; };
+		5CB04D091E86205A003E8D04 /* CPBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPBaseViewController.swift; sourceTree = "<group>"; };
+		5CB04D0C1E864EEA003E8D04 /* CPDetailViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDetailViewCell.swift; sourceTree = "<group>"; };
+		5CB04D0D1E864EEA003E8D04 /* CPDetailViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPDetailViewCell.xib; sourceTree = "<group>"; };
+		5CB04D101E8657E2003E8D04 /* CPVisaViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPVisaViewCell.swift; sourceTree = "<group>"; };
+		5CB04D111E8657E2003E8D04 /* CPVisaViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPVisaViewCell.xib; sourceTree = "<group>"; };
+		5CB04D1D1E866C5D003E8D04 /* CPMyCourseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMyCourseViewCell.swift; sourceTree = "<group>"; };
+		5CB04D1E1E866C5D003E8D04 /* CPMyCourseViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPMyCourseViewCell.xib; sourceTree = "<group>"; };
+		5CB04D211E866D66003E8D04 /* CPMyViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMyViewCell.swift; sourceTree = "<group>"; };
+		5CB04D221E866D66003E8D04 /* CPMyViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPMyViewCell.xib; sourceTree = "<group>"; };
+		5CB04D251E8672C7003E8D04 /* CPMyInfoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMyInfoViewCell.swift; sourceTree = "<group>"; };
+		5CB04D261E8672C7003E8D04 /* CPMyInfoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPMyInfoViewCell.xib; sourceTree = "<group>"; };
+		5CB04D291E867351003E8D04 /* CPMyVisaViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMyVisaViewCell.swift; sourceTree = "<group>"; };
+		5CB04D2A1E867351003E8D04 /* CPMyVisaViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPMyVisaViewCell.xib; sourceTree = "<group>"; };
 		5CC21F041E7E656300DD4AA6 /* ZWAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWAdView.h; sourceTree = "<group>"; };
 		5CC21F051E7E656300DD4AA6 /* ZWAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWAdView.m; sourceTree = "<group>"; };
 		5CC21F071E7E88CE00DD4AA6 /* CPTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTestViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +159,7 @@
 				5CA727921E73C8020072D6CC /* CPHomeViewController.swift */,
 				5CC21F071E7E88CE00DD4AA6 /* CPTestViewController.swift */,
 				5CB04D011E851869003E8D04 /* CPInfoViewController.swift */,
+				5CB04D091E86205A003E8D04 /* CPBaseViewController.swift */,
 			);
 			path = CPControllers;
 			sourceTree = "<group>";
@@ -143,11 +175,13 @@
 		5CA727901E73C7DE0072D6CC /* CPThird */ = {
 			isa = PBXGroup;
 			children = (
+				5CB04D061E861B6F003E8D04 /* UIView+Extension */,
 				5CC21F031E7E656300DD4AA6 /* ZWADScrollview */,
 				5CC21F091E7E8F2800DD4AA6 /* CycleScrollView */,
 				5CA7279A1E73D6E60072D6CC /* SwiftyJSON.swift */,
 				5CA7279F1E73D7CC0072D6CC /* CPHttpRequest.swift */,
 				5CA7279E1E73D7040072D6CC /* CPHeader.h */,
+				5CB04D071E861B8F003E8D04 /* CPConfig.swift */,
 			);
 			path = CPThird;
 			sourceTree = "<group>";
@@ -155,14 +189,16 @@
 		5CA727911E73C7DE0072D6CC /* CPViews */ = {
 			isa = PBXGroup;
 			children = (
-				5CA8620A1E7CC96800BD0113 /* CPMagazineViewCell.swift */,
-				5CA8620B1E7CC96800BD0113 /* CPMagazineViewCell.xib */,
-				5CA862121E7CC99E00BD0113 /* CPNotifyViewCell.swift */,
-				5CA862131E7CC99E00BD0113 /* CPNotifyViewCell.xib */,
-				5CA862161E7CC9FE00BD0113 /* CPLocaViewCell.swift */,
-				5CA862171E7CC9FE00BD0113 /* CPLocaViewCell.xib */,
-				5CA8621A1E7CD3FD00BD0113 /* CPInfoViewCell.swift */,
-				5CA8621B1E7CD3FD00BD0113 /* CPInfoViewCell.xib */,
+				5CB04D0B1E864B82003E8D04 /* HomeTableviewCell */,
+				5CB04D141E8668E4003E8D04 /* LocalTableviewCell */,
+				5CB04D1D1E866C5D003E8D04 /* CPMyCourseViewCell.swift */,
+				5CB04D1E1E866C5D003E8D04 /* CPMyCourseViewCell.xib */,
+				5CB04D211E866D66003E8D04 /* CPMyViewCell.swift */,
+				5CB04D221E866D66003E8D04 /* CPMyViewCell.xib */,
+				5CB04D251E8672C7003E8D04 /* CPMyInfoViewCell.swift */,
+				5CB04D261E8672C7003E8D04 /* CPMyInfoViewCell.xib */,
+				5CB04D291E867351003E8D04 /* CPMyVisaViewCell.swift */,
+				5CB04D2A1E867351003E8D04 /* CPMyVisaViewCell.xib */,
 			);
 			path = CPViews;
 			sourceTree = "<group>";
@@ -175,6 +211,41 @@
 				5CA727831E73C7590072D6CC /* Assets.xcassets */,
 			);
 			path = CPResource;
+			sourceTree = "<group>";
+		};
+		5CB04D061E861B6F003E8D04 /* UIView+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5CB04D031E86194E003E8D04 /* UIView+Extension.h */,
+				5CB04D041E86194E003E8D04 /* UIView+Extension.m */,
+			);
+			name = "UIView+Extension";
+			sourceTree = "<group>";
+		};
+		5CB04D0B1E864B82003E8D04 /* HomeTableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5CA8620A1E7CC96800BD0113 /* CPMagazineViewCell.swift */,
+				5CA8620B1E7CC96800BD0113 /* CPMagazineViewCell.xib */,
+				5CA862121E7CC99E00BD0113 /* CPNotifyViewCell.swift */,
+				5CA862131E7CC99E00BD0113 /* CPNotifyViewCell.xib */,
+				5CA862161E7CC9FE00BD0113 /* CPLocaViewCell.swift */,
+				5CA862171E7CC9FE00BD0113 /* CPLocaViewCell.xib */,
+				5CA8621A1E7CD3FD00BD0113 /* CPInfoViewCell.swift */,
+				5CA8621B1E7CD3FD00BD0113 /* CPInfoViewCell.xib */,
+			);
+			name = HomeTableviewCell;
+			sourceTree = "<group>";
+		};
+		5CB04D141E8668E4003E8D04 /* LocalTableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5CB04D0C1E864EEA003E8D04 /* CPDetailViewCell.swift */,
+				5CB04D0D1E864EEA003E8D04 /* CPDetailViewCell.xib */,
+				5CB04D101E8657E2003E8D04 /* CPVisaViewCell.swift */,
+				5CB04D111E8657E2003E8D04 /* CPVisaViewCell.xib */,
+			);
+			name = LocalTableviewCell;
 			sourceTree = "<group>";
 		};
 		5CC21F031E7E656300DD4AA6 /* ZWADScrollview */ = {
@@ -269,14 +340,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB04D201E866C5D003E8D04 /* CPMyCourseViewCell.xib in Resources */,
+				5CB04D131E8657E2003E8D04 /* CPVisaViewCell.xib in Resources */,
 				5CA727A51E7526620072D6CC /* qian.png in Resources */,
+				5CB04D241E866D66003E8D04 /* CPMyViewCell.xib in Resources */,
+				5CB04D2C1E867351003E8D04 /* CPMyVisaViewCell.xib in Resources */,
 				5CA727871E73C7590072D6CC /* LaunchScreen.storyboard in Resources */,
+				5CB04D0F1E864EEA003E8D04 /* CPDetailViewCell.xib in Resources */,
 				5CA727A61E7526620072D6CC /* WechatIMG16.jpeg in Resources */,
 				5CA862151E7CC99E00BD0113 /* CPNotifyViewCell.xib in Resources */,
 				5CA727841E73C7590072D6CC /* Assets.xcassets in Resources */,
 				5CA8621D1E7CD3FD00BD0113 /* CPInfoViewCell.xib in Resources */,
 				5CA727821E73C7590072D6CC /* Main.storyboard in Resources */,
 				5CA862191E7CC9FE00BD0113 /* CPLocaViewCell.xib in Resources */,
+				5CB04D281E8672C7003E8D04 /* CPMyInfoViewCell.xib in Resources */,
 				5CA8620D1E7CC96800BD0113 /* CPMagazineViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,10 +413,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB04D0E1E864EEA003E8D04 /* CPDetailViewCell.swift in Sources */,
+				5CB04D051E86194E003E8D04 /* UIView+Extension.m in Sources */,
 				5CA727931E73C8020072D6CC /* CPHomeViewController.swift in Sources */,
+				5CB04D081E861B8F003E8D04 /* CPConfig.swift in Sources */,
+				5CB04D271E8672C7003E8D04 /* CPMyInfoViewCell.swift in Sources */,
+				5CB04D2B1E867351003E8D04 /* CPMyVisaViewCell.swift in Sources */,
 				5CA727AB1E7533350072D6CC /* CycleScrollView.m in Sources */,
 				5CA727A01E73D7CC0072D6CC /* CPHttpRequest.swift in Sources */,
+				5CB04D1F1E866C5D003E8D04 /* CPMyCourseViewCell.swift in Sources */,
 				5CA727951E73C81E0072D6CC /* CPDataModel.swift in Sources */,
+				5CB04D231E866D66003E8D04 /* CPMyViewCell.swift in Sources */,
 				5CA7279C1E73D6E60072D6CC /* SwiftyJSON.swift in Sources */,
 				5CA8621C1E7CD3FD00BD0113 /* CPInfoViewCell.swift in Sources */,
 				5CC21F061E7E656300DD4AA6 /* ZWAdView.m in Sources */,
@@ -348,6 +432,8 @@
 				5CB04D021E851869003E8D04 /* CPInfoViewController.swift in Sources */,
 				5CA862141E7CC99E00BD0113 /* CPNotifyViewCell.swift in Sources */,
 				5CA8620C1E7CC96800BD0113 /* CPMagazineViewCell.swift in Sources */,
+				5CB04D0A1E86205A003E8D04 /* CPBaseViewController.swift in Sources */,
+				5CB04D121E8657E2003E8D04 /* CPVisaViewCell.swift in Sources */,
 				5CA727AC1E7533350072D6CC /* NSTimer+Addition.m in Sources */,
 				5CA7277D1E73C7580072D6CC /* AppDelegate.swift in Sources */,
 			);

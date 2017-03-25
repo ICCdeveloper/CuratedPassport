@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D720010AECA5CDDC0FA8BC155059A33A'
+               BlueprintIdentifier = '97DA435C0FCA24E281AB992FB6B24232'
                BlueprintName = 'Pods-CuratedPassport'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-CuratedPassport.a'>
