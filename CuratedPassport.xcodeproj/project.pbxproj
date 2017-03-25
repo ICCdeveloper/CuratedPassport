@@ -191,14 +191,7 @@
 			children = (
 				5CB04D0B1E864B82003E8D04 /* HomeTableviewCell */,
 				5CB04D141E8668E4003E8D04 /* LocalTableviewCell */,
-				5CB04D1D1E866C5D003E8D04 /* CPMyCourseViewCell.swift */,
-				5CB04D1E1E866C5D003E8D04 /* CPMyCourseViewCell.xib */,
-				5CB04D211E866D66003E8D04 /* CPMyViewCell.swift */,
-				5CB04D221E866D66003E8D04 /* CPMyViewCell.xib */,
-				5CB04D251E8672C7003E8D04 /* CPMyInfoViewCell.swift */,
-				5CB04D261E8672C7003E8D04 /* CPMyInfoViewCell.xib */,
-				5CB04D291E867351003E8D04 /* CPMyVisaViewCell.swift */,
-				5CB04D2A1E867351003E8D04 /* CPMyVisaViewCell.xib */,
+				5CB04D2D1E867BF7003E8D04 /* InfoTableviewCell */,
 			);
 			path = CPViews;
 			sourceTree = "<group>";
@@ -246,6 +239,21 @@
 				5CB04D111E8657E2003E8D04 /* CPVisaViewCell.xib */,
 			);
 			name = LocalTableviewCell;
+			sourceTree = "<group>";
+		};
+		5CB04D2D1E867BF7003E8D04 /* InfoTableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5CB04D1D1E866C5D003E8D04 /* CPMyCourseViewCell.swift */,
+				5CB04D1E1E866C5D003E8D04 /* CPMyCourseViewCell.xib */,
+				5CB04D211E866D66003E8D04 /* CPMyViewCell.swift */,
+				5CB04D221E866D66003E8D04 /* CPMyViewCell.xib */,
+				5CB04D251E8672C7003E8D04 /* CPMyInfoViewCell.swift */,
+				5CB04D261E8672C7003E8D04 /* CPMyInfoViewCell.xib */,
+				5CB04D291E867351003E8D04 /* CPMyVisaViewCell.swift */,
+				5CB04D2A1E867351003E8D04 /* CPMyVisaViewCell.xib */,
+			);
+			name = InfoTableviewCell;
 			sourceTree = "<group>";
 		};
 		5CC21F031E7E656300DD4AA6 /* ZWADScrollview */ = {
