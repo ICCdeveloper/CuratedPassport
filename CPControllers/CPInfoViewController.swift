@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CPInfoViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class CPInfoViewController: CPBaseViewController,UITableViewDelegate,UITableViewDataSource {
 
     var infoTableView:UITableView!
     override func viewDidLoad() {
@@ -18,9 +18,17 @@ class CPInfoViewController: UIViewController,UITableViewDelegate,UITableViewData
         self.view.backgroundColor = UIColor.brown
         self.navigationItem.title = "个人信息"
         self.automaticallyAdjustsScrollViewInsets = false
-        let backBtn = UIButton.init(frame: CGRect.init(x: 0, y: SCREEN_H - 40, width: SCREEN_W, height: 40))
-        backBtn.addTarget(self, action: #selector(backBtnClick), for: .touchUpInside)
-        self.view.addSubview(backBtn)
+        self.createUI()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+    }
+    
+    func createUI() {
+        
+        let item = UIBarButtonItem.init(title: "", style: .plain, target: self, action: nil)
+        self.navigationItem.backBarButtonItem = item
         self.infoTableView = UITableView.init(frame: CGRect.init(x: 0, y: 64, width: SCREEN_W, height: SCREEN_H - 64 - 40))
         infoTableView.delegate = self
         infoTableView.dataSource = self
@@ -33,11 +41,12 @@ class CPInfoViewController: UIViewController,UITableViewDelegate,UITableViewData
         infoTableView.register(UINib.init(nibName: "CPMyViewCell", bundle: nil), forCellReuseIdentifier: "CPMyViewCell")
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    func MyFavBtnClick()  {
+        self.navigationController?.pushViewController(CPMyFavouriteViewController(), animated: true)
     }
-
-    func backBtnClick() {
-        self.navigationController?.popViewController(animated: true)
+    
+    func MyFocusBtnClick() {
+        self.navigationController?.pushViewController(CPMyFocusViewController(), animated: true)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -64,6 +73,8 @@ class CPInfoViewController: UIViewController,UITableViewDelegate,UITableViewData
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CPMyViewCell", for: indexPath) as! CPMyViewCell
             cell.selectionStyle = .none
+            cell.myFavBtn.addTarget(self, action: #selector(MyFavBtnClick), for: .touchUpInside)
+            cell.myFocusBtn.addTarget(self, action: #selector(MyFocusBtnClick), for: .touchUpInside)
             return cell
         }
     }

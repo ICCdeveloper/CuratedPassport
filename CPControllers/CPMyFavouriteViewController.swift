@@ -1,26 +1,19 @@
 //
-//  CPBaseViewController.swift
+//  CPMyFavouriteViewController.swift
 //  CuratedPassport
 //
-//  Created by SiliconZou on 2017/3/25.
+//  Created by SiliconZou on 2017/3/26.
 //  Copyright © 2017年 ICCorg. All rights reserved.
 //
 
 import UIKit
 
-class CPBaseViewController: UIViewController {
+class CPMyFavouriteViewController: CPBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let backBtn = UIButton.init(frame: CGRect.init(x: 0, y: SCREEN_H - 40, width: SCREEN_W, height: 40))
-        backBtn.backgroundColor = UIColor.magenta
-        backBtn.addTarget(self, action: #selector(backBtnClick), for: .touchUpInside)
-        self.view.addSubview(backBtn)
-    }
-    
-    func backBtnClick() {
-        self.navigationController?.popViewController(animated: true)
+        self.view.backgroundColor = UIColor.cyan
     }
 
     override func didReceiveMemoryWarning() {

@@ -44,6 +44,11 @@
 		5CB04D281E8672C7003E8D04 /* CPMyInfoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB04D261E8672C7003E8D04 /* CPMyInfoViewCell.xib */; };
 		5CB04D2B1E867351003E8D04 /* CPMyVisaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D291E867351003E8D04 /* CPMyVisaViewCell.swift */; };
 		5CB04D2C1E867351003E8D04 /* CPMyVisaViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB04D2A1E867351003E8D04 /* CPMyVisaViewCell.xib */; };
+		5CB04D2F1E87577D003E8D04 /* CPMyFavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D2E1E87577D003E8D04 /* CPMyFavouriteViewController.swift */; };
+		5CB04D311E875E08003E8D04 /* CPMyFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D301E875E08003E8D04 /* CPMyFocusViewController.swift */; };
+		5CB04D341E875EFF003E8D04 /* CPMyFocusViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D321E875EFF003E8D04 /* CPMyFocusViewCell.swift */; };
+		5CB04D351E875EFF003E8D04 /* CPMyFocusViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB04D331E875EFF003E8D04 /* CPMyFocusViewCell.xib */; };
+		5CB04D371E878EDF003E8D04 /* CPHomeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB04D361E878EDF003E8D04 /* CPHomeExtension.swift */; };
 		5CC21F061E7E656300DD4AA6 /* ZWAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC21F051E7E656300DD4AA6 /* ZWAdView.m */; };
 		5CC21F081E7E88CE00DD4AA6 /* CPTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC21F071E7E88CE00DD4AA6 /* CPTestViewController.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +96,11 @@
 		5CB04D261E8672C7003E8D04 /* CPMyInfoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPMyInfoViewCell.xib; sourceTree = "<group>"; };
 		5CB04D291E867351003E8D04 /* CPMyVisaViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMyVisaViewCell.swift; sourceTree = "<group>"; };
 		5CB04D2A1E867351003E8D04 /* CPMyVisaViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPMyVisaViewCell.xib; sourceTree = "<group>"; };
+		5CB04D2E1E87577D003E8D04 /* CPMyFavouriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMyFavouriteViewController.swift; sourceTree = "<group>"; };
+		5CB04D301E875E08003E8D04 /* CPMyFocusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMyFocusViewController.swift; sourceTree = "<group>"; };
+		5CB04D321E875EFF003E8D04 /* CPMyFocusViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMyFocusViewCell.swift; sourceTree = "<group>"; };
+		5CB04D331E875EFF003E8D04 /* CPMyFocusViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPMyFocusViewCell.xib; sourceTree = "<group>"; };
+		5CB04D361E878EDF003E8D04 /* CPHomeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPHomeExtension.swift; sourceTree = "<group>"; };
 		5CC21F041E7E656300DD4AA6 /* ZWAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWAdView.h; sourceTree = "<group>"; };
 		5CC21F051E7E656300DD4AA6 /* ZWAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWAdView.m; sourceTree = "<group>"; };
 		5CC21F071E7E88CE00DD4AA6 /* CPTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTestViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +170,9 @@
 				5CC21F071E7E88CE00DD4AA6 /* CPTestViewController.swift */,
 				5CB04D011E851869003E8D04 /* CPInfoViewController.swift */,
 				5CB04D091E86205A003E8D04 /* CPBaseViewController.swift */,
+				5CB04D2E1E87577D003E8D04 /* CPMyFavouriteViewController.swift */,
+				5CB04D301E875E08003E8D04 /* CPMyFocusViewController.swift */,
+				5CB04D361E878EDF003E8D04 /* CPHomeExtension.swift */,
 			);
 			path = CPControllers;
 			sourceTree = "<group>";
@@ -192,6 +205,8 @@
 				5CB04D0B1E864B82003E8D04 /* HomeTableviewCell */,
 				5CB04D141E8668E4003E8D04 /* LocalTableviewCell */,
 				5CB04D2D1E867BF7003E8D04 /* InfoTableviewCell */,
+				5CB04D321E875EFF003E8D04 /* CPMyFocusViewCell.swift */,
+				5CB04D331E875EFF003E8D04 /* CPMyFocusViewCell.xib */,
 			);
 			path = CPViews;
 			sourceTree = "<group>";
@@ -322,6 +337,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 696CWE7V3A;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -358,6 +378,7 @@
 				5CA727A61E7526620072D6CC /* WechatIMG16.jpeg in Resources */,
 				5CA862151E7CC99E00BD0113 /* CPNotifyViewCell.xib in Resources */,
 				5CA727841E73C7590072D6CC /* Assets.xcassets in Resources */,
+				5CB04D351E875EFF003E8D04 /* CPMyFocusViewCell.xib in Resources */,
 				5CA8621D1E7CD3FD00BD0113 /* CPInfoViewCell.xib in Resources */,
 				5CA727821E73C7590072D6CC /* Main.storyboard in Resources */,
 				5CA862191E7CC9FE00BD0113 /* CPLocaViewCell.xib in Resources */,
@@ -422,8 +443,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CB04D0E1E864EEA003E8D04 /* CPDetailViewCell.swift in Sources */,
+				5CB04D311E875E08003E8D04 /* CPMyFocusViewController.swift in Sources */,
 				5CB04D051E86194E003E8D04 /* UIView+Extension.m in Sources */,
 				5CA727931E73C8020072D6CC /* CPHomeViewController.swift in Sources */,
+				5CB04D2F1E87577D003E8D04 /* CPMyFavouriteViewController.swift in Sources */,
+				5CB04D371E878EDF003E8D04 /* CPHomeExtension.swift in Sources */,
 				5CB04D081E861B8F003E8D04 /* CPConfig.swift in Sources */,
 				5CB04D271E8672C7003E8D04 /* CPMyInfoViewCell.swift in Sources */,
 				5CB04D2B1E867351003E8D04 /* CPMyVisaViewCell.swift in Sources */,
@@ -439,6 +463,7 @@
 				5CC21F081E7E88CE00DD4AA6 /* CPTestViewController.swift in Sources */,
 				5CB04D021E851869003E8D04 /* CPInfoViewController.swift in Sources */,
 				5CA862141E7CC99E00BD0113 /* CPNotifyViewCell.swift in Sources */,
+				5CB04D341E875EFF003E8D04 /* CPMyFocusViewCell.swift in Sources */,
 				5CA8620C1E7CC96800BD0113 /* CPMagazineViewCell.swift in Sources */,
 				5CB04D0A1E86205A003E8D04 /* CPBaseViewController.swift in Sources */,
 				5CB04D121E8657E2003E8D04 /* CPVisaViewCell.swift in Sources */,

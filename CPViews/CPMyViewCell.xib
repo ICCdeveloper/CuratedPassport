@@ -41,6 +41,11 @@
                     </button>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="myFavBtn" destination="OGU-Nr-Hc4" id="dfc-bJ-KTO"/>
+                <outlet property="myFocusBtn" destination="wdr-iS-HYq" id="yyU-yd-v5O"/>
+                <outlet property="settingBtn" destination="MVP-2V-6rU" id="9TP-ta-HkG"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class CPHomeViewController: CPBaseViewController,UITableViewDelegate,UITableViewDataSource {
+class CPHomeViewController: UIViewController {
     
     var bg : UIImage?
     //默认首页布局的tableview
@@ -37,7 +38,7 @@ class CPHomeViewController: CPBaseViewController,UITableViewDelegate,UITableView
     //懒加载上滑出现的聚点信息
     lazy var localTableView:UITableView = {
         
-        let localTableView = UITableView.init(frame: CGRect.init(x: 0, y: SCREEN_H*2 + 44, width: SCREEN_W, height: SCREEN_H))
+        let localTableView = UITableView.init(frame: CGRect.init(x: 0, y: SCREEN_H*2 + 44, width: SCREEN_W, height: SCREEN_H - 44))
         localTableView.backgroundColor = UIColor.clear
         localTableView.delegate = self
         localTableView.dataSource = self
@@ -50,6 +51,39 @@ class CPHomeViewController: CPBaseViewController,UITableViewDelegate,UITableView
         return localTableView
     
     }()
+    
+    //懒加载上拉时的返回按钮
+    lazy var pullupBackBtn:UIButton = {
+    
+        let pullupBackBtn = UIButton.init(frame: CGRect.init(x: 0, y: SCREEN_H*2, width: SCREEN_W, height: 44))
+        pullupBackBtn.backgroundColor = UIColor.magenta
+        pullupBackBtn.alpha = 0.5
+        pullupBackBtn.addTarget(self, action: #selector(pullupBackBtnClick), for: .touchUpInside)
+        
+        return pullupBackBtn
+    }()
+    
+    //懒加载下拉时的返回按钮
+    lazy var pulldownBackBtn:UIButton = {
+    
+        let pulldownBackBtn = UIButton.init(frame: CGRect.init(x: 0, y: SCREEN_H - 44, width: SCREEN_W, height: 44))
+        pulldownBackBtn.backgroundColor = UIColor.magenta
+        pulldownBackBtn.alpha = 0.5
+        pulldownBackBtn.addTarget(self, action: #selector(pullupBackBtnClick), for: .touchUpInside)
+        return pulldownBackBtn
+    }()
+    
+    lazy var locateManager:CLLocationManager = {
+    
+        let locateM = CLLocationManager()
+        locateM.delegate = self
+        locateM.requestAlwaysAuthorization()
+        if #available(iOS 9.0, *) {
+            locateM.allowsBackgroundLocationUpdates = true
+        }
+        return locateM
+    
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(bgScrollView)
@@ -60,10 +94,31 @@ class CPHomeViewController: CPBaseViewController,UITableViewDelegate,UITableView
         self.bgScrollView.addSubview(homeTableView!)
         self.bgScrollView.addSubview(localTableView)
         self.bgScrollView.addSubview(magaWebView)
+        self.bgScrollView.addSubview(pullupBackBtn)
+        self.bgScrollView.addSubview(pulldownBackBtn)
         self.PullUp()
         self.PullUpBack()
         self.PullDown()
+        self.PullDownBack()
+        self.locateManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locateManager.startUpdatingLocation()
+        
+        if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
+            let center = CLLocationCoordinate2DMake(23.494725460208482, 113.19972395907453)
+            var distance:CLLocationDistance = 0.1
+//            if distance < locateManager.maximumRegionMonitoringDistance {
+//                distance = locateManager.maximumRegionMonitoringDistance
+//            }
+            let region = CLCircularRegion.init(center: center, radius: distance, identifier: "id")
+            self.locateManager.startMonitoring(for: region)
+            self.locateManager.requestState(for: region)
+        }
     }
+    
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        self.locateManager.desiredAccuracy = kCLLocationAccuracyBest
+//        self.locateManager.startUpdatingLocation()
+//    }
     
     override func viewWillAppear(_ animated: Bool) {
         //隐藏导航栏
@@ -85,19 +140,39 @@ class CPHomeViewController: CPBaseViewController,UITableViewDelegate,UITableView
         homeTableView.register(UINib.init(nibName: "CPLocaViewCell", bundle: nil), forCellReuseIdentifier: "CPLocaViewCell")
     }
     
-    //下拉触发的操作
+    func pullupBackBtnClick() {
+        
+        self.bgScrollView.scrollRectToVisible(CGRect.init(x: 0, y: SCREEN_H, width: SCREEN_W, height: SCREEN_H), animated: true)
+    }
+    
+//    func pulldownBackBtnClick() {
+//        self.bgScrollView.scrollRectToVisible(CGRect.init(x: <#T##CGFloat#>, y: <#T##CGFloat#>, width: <#T##CGFloat#>, height: <#T##CGFloat#>), animated: <#T##Bool#>)
+//    }
+    
+    //下拉进入杂志时触发的操作
     func PullDown() {
         weak var weakSelf = self
         let pulldownHeader = MJRefreshNormalHeader.init { 
             weakSelf?.bgScrollView.scrollRectToVisible(CGRect.init(x: 0, y: 0, width: SCREEN_W, height: SCREEN_H), animated: true)
             weakSelf?.homeTableView.mj_header.endRefreshing()
-            weakSelf?.magaWebView.loadRequest(URLRequest.init(url: URL.init(string: "http://m.bing.com")!))
+            weakSelf?.magaWebView.loadRequest(URLRequest.init(url: URL.init(string: "https://index.baidu.com")!))
         }
         pulldownHeader?.arrowView.image = nil
         pulldownHeader?.lastUpdatedTimeLabel.isHidden = true
         pulldownHeader?.setTitle("下拉进入该杂志", for: MJRefreshState.idle)
         pulldownHeader?.setTitle("释放到达杂志页", for: MJRefreshState.pulling)
         self.homeTableView.mj_header = pulldownHeader
+    }
+    
+    //下拉返回首页时触发的操作
+    func PullDownBack() {
+        weak var weakSelf = self
+        let pulldownFooter = MJRefreshBackNormalFooter.init {
+            weakSelf?.bgScrollView.scrollRectToVisible(CGRect.init(x: 0, y: SCREEN_H, width: SCREEN_W, height: SCREEN_H), animated: true)
+            weakSelf?.magaWebView.scrollView.mj_footer.endRefreshing()
+        }
+        pulldownFooter?.arrowView.image = nil
+        self.magaWebView.scrollView.mj_footer = pulldownFooter
     }
     
     //上滑进入时触发的操作
@@ -130,126 +205,6 @@ class CPHomeViewController: CPBaseViewController,UITableViewDelegate,UITableView
     }
     
     
-    //MARK:  tableview代理方法
-    func numberOfSections(in tableView: UITableView) -> Int {
-        if tableView.isEqual(homeTableView) {
-            return 4
-        } else {
-            return 2
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        if tableView.isEqual(homeTableView) {
-            if indexPath.section == 0 {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CPMagazineViewCell", for: indexPath) as! CPMagazineViewCell
-                return cell
-            } else if indexPath.section == 1 {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CPInfoViewCell", for: indexPath) as! CPInfoViewCell
-                return cell
-            } else if indexPath.section == 2 {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CPNotifyViewCell", for: indexPath) as! CPNotifyViewCell
-                return cell
-            } else {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CPLocaViewCell", for: indexPath) as! CPLocaViewCell
-                return cell
-            }
-        } else {
-            if indexPath.section == 0 {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CPDetailViewCell", for: indexPath) as! CPDetailViewCell
-                cell.selectionStyle = UITableViewCellSelectionStyle.none
-                return cell
-            } else {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CPVisaViewCell", for: indexPath) as! CPVisaViewCell
-                cell.selectionStyle = UITableViewCellSelectionStyle.none
-                return cell
-            }
-        }
-        
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        if tableView.isEqual(homeTableView) {
-            
-            if indexPath.section == 1 {
-                
-                let cpInfo = CPInfoViewController()
-                //转场动画
-                let transition = CATransition()
-                
-                //动画时间
-                transition.duration = 0.8
-                
-                //动画方向（在某些类型的动画里会失效）
-                transition.subtype = kCATransitionFromRight
-                
-                //动画类型
-                transition.type = kCATransitionReveal
-                
-                transition.type = "rippleEffect"
-                /*
-                 fade moveIn push reveal	和系统预设的四种一样
-                 pageCurl pageUnCurl		翻页
-                 rippleEffect			滴水效果
-                 suckEffect			收缩效果，如一块布被抽走
-                 cube alignedCube		立方体效果
-                 flip alignedFlip oglFlip		翻转效果
-                 rotate				旋转
-                 cameraIris cameraIrisHollowOpen cameraIrisHollowClose 相机
-                 */
-                
-                self.navigationController?.view.layer.add(transition, forKey: nil)
-                
-                self.navigationController?.pushViewController(cpInfo, animated: false)
-                
-            }
-        }
-        
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        if tableView.isEqual(homeTableView) {
-
-            if indexPath.section == 0 {
-                return 240
-            } else if indexPath.section == 1 {
-                return 100
-            } else if indexPath.section == 2 {
-                return 40
-            } else {
-                return 100
-            }
-        } else {
-            if indexPath.section == 0 {
-                return 220
-            } else {
-                return 300
-            }
-        }
-        
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        if tableView.isEqual(homeTableView) {
-            if section == 3 {
-                return 0
-            } else if section == 1 {
-                return 0
-            }
-            return 30
-        } else {
-            return 0
-        }
-        
-        
-    }
     
 //    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
 //        let offsetY = scrollView.contentOffset.y

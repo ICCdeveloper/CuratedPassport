@@ -1,18 +1,15 @@
 //
-//  CPMyViewCell.swift
+//  CPMyFocusViewCell.swift
 //  CuratedPassport
 //
-//  Created by SiliconZou on 2017/3/25.
+//  Created by SiliconZou on 2017/3/26.
 //  Copyright © 2017年 ICCorg. All rights reserved.
 //
 
 import UIKit
 
-class CPMyViewCell: UITableViewCell {
+class CPMyFocusViewCell: UITableViewCell {
 
-    @IBOutlet weak var settingBtn: UIButton!
-    @IBOutlet weak var myFocusBtn: UIButton!
-    @IBOutlet weak var myFavBtn: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
